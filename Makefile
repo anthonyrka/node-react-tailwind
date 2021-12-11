@@ -11,4 +11,6 @@ run:
                            --entrypoint=bash \
 			   -e HISTFILE=/root/$(HISTORY_FILE) \
 			   -v $(PWD)/$(HISTORY_FILE):/root/$(HISTORY_FILE) \
+                           -v $(PWD):/home/app/ \
+                           -p 3000:3000 \
                            $(IMAGE_NAME)

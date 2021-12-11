@@ -6,7 +6,7 @@ RUN apk add -y --no-cache \
         vim \
         git \
         bash \
-        curl
+        curl 
 
 RUN mkdir -p ~/.vim/pack/vendor/start
 
@@ -16,5 +16,6 @@ RUN set -xe \
         && git clone https://github.com/sheerun/vim-polyglot ~/.vim/pack/vendor/start/vim-polyglot
 
 COPY test.vimrc /root/.vimrc
+COPY test.bashrc /root/.bashrc
 
-WORKDIR /root
+WORKDIR /home/app
