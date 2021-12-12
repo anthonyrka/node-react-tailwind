@@ -3,23 +3,14 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   <html className="dark">
+   <h1 className="bg-white-100 dark:bg-black from-zinc-900 text-5xl border-2 border-green-100 dark: border-slate-100 font-bold text-stone-900 dark:text-slate-100">
+      Hello World!
+    </h1>
+    <div className="bg-white-100 text-stone-900 dark:bg-black text-3xl dark:text-slate-100 h-screen">Yo hi</div>
+</html>
+)
+    
 }
 
 export default App;
